@@ -35,6 +35,7 @@ subprojects {
 	dependencies {
 		implementation("org.springframework.boot:spring-boot-starter-data-jpa")
 		implementation("org.springframework.boot:spring-boot-starter-data-redis")
+		implementation("org.springframework.kafka:spring-kafka")
 		compileOnly("org.projectlombok:lombok")
 		annotationProcessor("org.projectlombok:lombok")
 		runtimeOnly("com.h2database:h2")
@@ -47,6 +48,7 @@ subprojects {
 		annotationProcessor("jakarta.annotation:jakarta.annotation-api")
 		annotationProcessor("jakarta.persistence:jakarta.persistence-api")
 		testImplementation("org.springframework.boot:spring-boot-starter-test")
+		testImplementation("org.springframework.boot:spring-kafka-test")
 	}
 }
 

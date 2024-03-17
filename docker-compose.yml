@@ -18,7 +18,7 @@ services:
     environment:
       - MYSQL_DATABASE=coupon
       - MYSQL_USER=abcd
-      - MYSQL_PASSWORD=1234
+      - MYSQL_PASSWORD=qwerty123!
       - MYSQL_ROOT_PASSWORD=1234
       - TZ=UTC
     volumes:

@@ -23,12 +23,11 @@ import java.util.stream.IntStream;
 import static com.custom.couponcore.exception.ErrorCode.*;
 import static com.custom.couponcore.util.CouponRedisUtils.getIssueRequestKey;
 import static com.custom.couponcore.util.CouponRedisUtils.getIssueRequestQueueKey;
-import static org.junit.jupiter.api.Assertions.*;
 
-class AsyncCouponIssueServiceV1Test extends TestConfig{
+class AsyncCouponIssueServiceTest extends TestConfig{
 
     @Autowired
-    AsyncCouponIssueServiceV1 sut;
+    AsyncCouponIssueService sut;
 
     @Autowired
     RedisTemplate<String,String> redisTemplate;
